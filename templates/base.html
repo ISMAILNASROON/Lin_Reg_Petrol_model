@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title> Linear Regression Model </title>
+    </head>
+    <body>
+        <h1> Welcome to Petrol Consumption Prediction  </h1>
+        <form action = 'predict' method="post">
+            <input type ='number' step='0.01' name = 'pt' placeholder='Petrol tax' required='required'/>
+            <input type ='number' name = 'ai' placeholder='Average inc' required='required'/>
+            <input type ='number' name = 'ph' placeholder='Highway' required='required'/>
+            <input type ='number' step='any' name = 'pdl' placeholder='Population' required='required'/>
+
+            <button type = 'submit'> predict </button>
+
+        </form>
+        {{pred_text}}
+        
+    </body>
+</html>
